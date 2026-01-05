@@ -74,7 +74,7 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: <span id="project-category"></span></li>
-                <li><strong>Client</strong>: <span id="project-client">Camex Global Concept</span></li>
+                <li><strong>Client</strong>: Camex Global Concept</li>
               </ul>
             </div>
 
@@ -123,8 +123,6 @@
     const params = new URLSearchParams(window.location.search);
     const title = params.get("title") || "Portfolio Details";
     const category = params.get("category") || "N/A";
-    const client = params.get("client") || "N/A";
-    const date = params.get("date") || "N/A";
     const image = params.get("image") || "assets/img/placeholder.png";
     const description = params.get("description") || "No description available.";
 
@@ -132,10 +130,6 @@
     document.getElementById("project-title").textContent = title;
     document.getElementById("breadcrumb-title").textContent = title;
     document.getElementById("project-category").textContent = category;
-    document.getElementById("project-client").textContent = client;
-    document.getElementById("project-date").textContent = date;
-    document.getElementById("project-url").textContent = "Visit Site";
-    document.getElementById("project-url").href = "#"; // Replace with real URL if needed
     document.getElementById("project-heading").textContent = title;
     document.getElementById("project-description").textContent = description;
 
