@@ -176,45 +176,55 @@
             from { transform: translateY(100%); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+        .back-home-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.back-home-btn:hover {
+  background: #0b5ed7;
+  transform: translateY(-4px);
+}
+
     </style>
 </head>
 <body>
-  <!-- Header -->
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <div class="profile-img">
-      <img src="assets/img/sinachi.jpeg" alt="Sinachi Franklin Ezeonyeka" class="img-fluid rounded-circle">
+    <div class="mobile-nav d-flex justify-content-between align-items-center">
+        <span class="fw-bold text-primary">PORTFOLIO</span>
+        <button class="btn border-0" onclick="toggleSidebar()">
+            <i class="bi bi-list fs-3"></i>
+        </button>
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">SinaFast</h1>
-    </a>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <i class="bi bi-code-square"></i>
+            <span>DevPortfolio</span>
+        </div>
+        <div class="nav flex-column mt-3">
+            <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i> Home
+            </a>
+            <a href="#" class="nav-link active">
+                <i class="bi bi-heart-fill"></i> Sponsor
+            </a>
+        </div>
+    </nav>
 
-    <div class="social-links text-center">
-      <a href="https://x.com/SinachiFra16993" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61575225039124" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/sinachi2016/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://github.com/Sinachi2" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/sinachi-franklin-ezeonyeka-581233373/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-    </div>
-  </header>
-
-  <!-- Main -->
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0" id="project-title">Portfolio Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current" id="breadcrumb-title">Portfolio Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
     <main class="main-content">
         
         <header class="hero-section">
@@ -226,6 +236,11 @@
                 </p>
             </div>
         </header>
+
+<a href="index.html" class="back-home-btn">
+  <i class="bi bi-house-door"></i>
+</a>
+
 
         <div class="container py-5 mt-4">
             <div class="row g-4 justify-content-center">
@@ -288,53 +303,9 @@
             </div>
         </div>
 
-        <footer id="footer" class="footer light-background">
-            <div class="container text-center">
-                <!-- Social Links -->
-                <div class="social-links d-flex justify-content-center gap-3 py-3">
-                    <a href="https://x.com/SinachiFra16993" class="twitter" title="Twitter" target="_blank">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=61575225039124"
-                        class="facebook"
-                        title="Facebook"
-                        target="_blank"
-                    >
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/sinachi2016/"
-                        class="instagram"
-                        title="Instagram"
-                        target="_blank"
-                    >
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://github.com/Sinachi2" class="github" title="GitHub" target="_blank">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/sinachi-franklin-ezeonyeka-581233373/"
-                        class="linkedin"
-                        title="LinkedIn"
-                        target="_blank"
-                    >
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Footer Text -->
-                <p>&copy; 2026 <strong>SinaFast</strong>. All Rights Reserved.</p>
-                <p>Designed by <strong>Sinachi Franklin Ezeonyeka</strong></p>
-            </div>
+        <footer class="text-center py-5 text-muted">
+            <p>&copy; 2024 Sinachi Franklin. Built with ❤️</p>
         </footer>
-
-        <!-- Scroll Top -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
-            ><i class="bi bi-arrow-up-short"></i
-        ></a>
-
     </main>
 
     <div class="toast-container">
