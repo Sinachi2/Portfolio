@@ -1795,12 +1795,12 @@
                 /* Wrapper */
                 .floating-share-wrapper {
                     position: fixed;
-                    top: 180px;
-                    left: 15px; /* ✅ MOVED TO LEFT SIDE */
+                    top: 90px; /* ✅ UP UP UP */
+                    right: 15px; /* ✅ OTHER SIDE */
                     z-index: 9999;
                 }
 
-                /* Main button (smaller) */
+                /* Main button */
                 .floating-share-btn {
                     width: 48px;
                     height: 48px;
@@ -1816,7 +1816,7 @@
                     transition: 0.3s;
                 }
 
-                /* Links container */
+                /* Links */
                 .floating-share-links {
                     display: flex;
                     flex-direction: column;
@@ -1824,11 +1824,10 @@
                     margin-top: 14px;
                     opacity: 0;
                     pointer-events: none;
-                    transform: translateX(-20px);
+                    transform: translateX(20px);
                     transition: 0.35s ease;
                 }
 
-                /* Active state */
                 .floating-share-links.active {
                     opacity: 1;
                     pointer-events: auto;
