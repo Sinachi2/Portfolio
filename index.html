@@ -146,6 +146,25 @@
                     left: 0; /* Keeps sidebar fixed to the left */
                 }
             }
+            .gradient-btn {
+                display: inline-block;
+                margin-top: 12px;
+                padding: 12px 32px;
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50px;
+                background: linear-gradient(135deg, #6366f1, #06b6d4);
+                box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+                transition: all 0.3s ease;
+            }
+
+            .gradient-btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 18px 40px rgba(6, 182, 212, 0.45);
+                background: linear-gradient(135deg, #06b6d4, #6366f1);
+            }
         </style>
         <script>
             function copySponsor(id) {
@@ -165,40 +184,34 @@
             </div>
 
             <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt="SinaFast"> -->
                 <h1 class="sitename">SinaFast</h1>
             </a>
 
             <div class="social-links text-center">
-                <a href="https://x.com/SinachiFra16993" class="twitter" title="Twitter" target="_blank"
-                    ><i class="bi bi-twitter-x"></i
-                ></a>
-                <a
-                    href="https://www.facebook.com/profile.php?id=61575225039124"
-                    class="facebook"
-                    title="Facebook"
-                    target="_blank"
-                    ><i class="bi bi-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/sinachi2016/" class="instagram" title="Instagram" target="_blank"
-                    ><i class="bi bi-instagram"></i
-                ></a>
-                <a href="https://github.com/Sinachi2" class="github" title="GitHub" target="_blank">
+                <a href="https://x.com/SinachiFra16993" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61575225039124" target="_blank" title="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/sinachi2016/" target="_blank" title="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/Sinachi2" target="_blank" title="GitHub">
                     <i class="bi bi-github"></i>
                 </a>
                 <a
                     href="https://www.linkedin.com/in/sinachi-franklin-ezeonyeka-581233373/"
-                    class="linkedin"
-                    title="LinkedIn"
                     target="_blank"
-                    ><i class="bi bi-linkedin"></i
-                ></a>
+                    title="LinkedIn"
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
 
-            <!-- Download CV Button -->
+            <!-- Download CV -->
             <div class="text-center mb-4">
-                <a href="assets/img/My CV.pdf" download class="btn btn-primary btn-sm">
+                <a href="assets/img/My_CV.pdf" download class="btn btn-primary btn-sm">
                     <i class="bi bi-download"></i> Download My CV
                 </a>
             </div>
@@ -224,36 +237,31 @@
                         <a href="#services"><i class="bi bi-hdd-stack navicon"></i> My Services</a>
                     </li>
 
+                    <!-- Dropdown -->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">
-                            <i class="bi bi-menu-button navicon"></i> More
+                        <a href="javascript:void(0);" class="dropdown-toggle">
+                            <i class="bi bi-menu-button navicon"></i>
+                            <span>More</span>
                             <i class="bi bi-chevron-down toggle-dropdown"></i>
                         </a>
+
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#testimonials" class="dropdown-item">
-                                    <i class="bi bi-chat-left-quote navicon me-2"></i> Testimonials
-                                </a>
+                                <a href="#testimonials"
+                                    ><i class="bi bi-chat-left-quote navicon me-2"></i> Testimonials</a
+                                >
                             </li>
                             <li>
-                                <a href="#certificates" class="dropdown-item">
-                                    <i class="bi bi-award navicon me-2"></i> My Certificates
-                                </a>
+                                <a href="#certificates"><i class="bi bi-award navicon me-2"></i> My Certificates</a>
                             </li>
                             <li>
-                                <a href="#portfolio" class="dropdown-item">
-                                    <i class="bi bi-images navicon me-2"></i> My Portfolio
-                                </a>
+                                <a href="#portfolio"><i class="bi bi-images navicon me-2"></i> My Portfolio</a>
                             </li>
                             <li>
-                                <a href="#sponsor" class="dropdown-item">
-                                    <i class="bi bi-cash-stack navicon me-2"></i> Sponsor Me
-                                </a>
+                                <a href="#sponsor"><i class="bi bi-cash-stack navicon me-2"></i> Sponsor Me</a>
                             </li>
                             <li>
-                                <a href="#contact" class="dropdown-item">
-                                    <i class="bi bi-envelope navicon me-2"></i> Contact Me
-                                </a>
+                                <a href="#contact"><i class="bi bi-envelope navicon me-2"></i> Contact Me</a>
                             </li>
                         </ul>
                     </li>
@@ -3362,36 +3370,14 @@ a
                                             href="portfolio-details.html?title=PeterLightSpeed%20Portfolio&category=Website&image=assets/img/Screenshot%202026-01-04%20121828.png&description=A%20personal%20website%20showcasing%20PeterLightSpeed%E2%80%99s%20projects,%20skills,%20and%20professional%20achievements."
                                             class="details-link"
                                             ><i class="bi bi-link-45deg"></i
-                                        ></a>                                        
-                                        <style>
-  .gradient-btn {
-    display: inline-block;
-    padding: 14px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #6366f1, #06b6d4);
-    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
-    transition: all 0.35s ease;
-  }
-
-  .gradient-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 45px rgba(6, 182, 212, 0.45);
-    background: linear-gradient(135deg, #06b6d4, #6366f1);
-  }
-
-  .gradient-btn:active {
-    transform: scale(0.96);
-  }
-</style>
-
-<a href="https://peterlight123.github.io/portfolio" class="gradient-btn" target="_blank">
-  See the Site
-</a>
-
+                                        ></a>
+                                        <a
+                                            href="https://peterlight123.github.io/portfolio"
+                                            class="gradient-btn"
+                                            target="_blank"
+                                        >
+                                            See the Site
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3416,36 +3402,14 @@ a
                                             href="portfolio-details.html?title=Wisdom%20Portfolio&category=Website&image=assets/img/wi.png&description=A%20professional%20portfolio%20showcasing%20Noah%20Wisdom%20Slyvanus%E2%80%99%20design%20projects,%20creative%20skills,%20and%20completed%20works."
                                             class="details-link"
                                             ><i class="bi bi-link-45deg"></i
-                                        ></a>                                        
-                                        <style>
-  .gradient-btn {
-    display: inline-block;
-    padding: 14px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #6366f1, #06b6d4);
-    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
-    transition: all 0.35s ease;
-  }
-
-  .gradient-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 45px rgba(6, 182, 212, 0.45);
-    background: linear-gradient(135deg, #06b6d4, #6366f1);
-  }
-
-  .gradient-btn:active {
-    transform: scale(0.96);
-  }
-</style>
-
-<a href="https://noahwisdom.github.io/Potfolio/" class="gradient-btn" target="_blank">
-  See the Site
-</a>
-
+                                        ></a>
+                                        <a
+                                            href="https://noahwisdom.github.io/Potfolio/"
+                                            class="gradient-btn"
+                                            target="_blank"
+                                        >
+                                            See the Site
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3471,35 +3435,13 @@ a
                                             class="details-link"
                                             ><i class="bi bi-link-45deg"></i
                                         ></a>
-                                        <style>
-  .gradient-btn {
-    display: inline-block;
-    padding: 14px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #6366f1, #06b6d4);
-    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
-    transition: all 0.35s ease;
-  }
-
-  .gradient-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 45px rgba(6, 182, 212, 0.45);
-    background: linear-gradient(135deg, #06b6d4, #6366f1);
-  }
-
-  .gradient-btn:active {
-    transform: scale(0.96);
-  }
-</style>
-
-<a href="https://sinachi2.github.io/portfolio/" class="gradient-btn" target="_blank">
-  See the Site
-</a>
-
+                                        <a
+                                            href="https://sinachi2.github.io/portfolio/"
+                                            class="gradient-btn"
+                                            target="_blank"
+                                        >
+                                            See the Site
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3519,6 +3461,13 @@ a
                                             class="glightbox preview-link"
                                         >
                                             <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a
+                                            href="https://trendycartlive.lovable.app/"
+                                            class="gradient-btn"
+                                            target="_blank"
+                                        >
+                                            See the Site
                                         </a>
                                         <a
                                             href="portfolio-details.html?title=TrendyCart&category=Website&image=assets/img/TrendyCart.png&description=TrendyCart%20is%20a%20modern,%20fast,%20and%20secure%20e-commerce%20platform%20with%20smart%20product%20discovery,%20easy%20checkout,%20multiple%20payment%20options,%20and%20real-time%20order%20tracking."
